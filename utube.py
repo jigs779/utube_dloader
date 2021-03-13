@@ -24,8 +24,8 @@ elif(types == "a"):
             yt_obj = YouTube(youtube_video_url)
 
             yt_obj.streams.get_audio_only().download(
-            output_path='data/data/com.termux/files/home/storage/downloads/TermuxDownloads')
-            # output_path='C:/Users/Jigs/Desktop', filename=yt_obj.title)
+            
+            output_path='C:/Users/Jigs/Desktop', filename=yt_obj.title)
             print(f'{yt_obj.title} audio is downloaded successfully')
         except Exception as e:
             print(e)
